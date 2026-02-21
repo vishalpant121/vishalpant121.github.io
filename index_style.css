@@ -1,221 +1,64 @@
 body {
-  background: url(assets/images/vic.jpeg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  font-family: 'Amatic SC', cursive;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  margin: 0;
+  background: #ffffff;
+  color: #111;
+  line-height: 1.6;
 }
 
-.hText {
-  color: #880c04;
-}
-#mainNav {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-family: 'Kalam', cursive;
-    font-weight: 700;
-}
-#mainNav .navbar-brand {
-    color: #fff;
-}
-#mainNav .navbar-nav {
-    margin-top: 1rem;
-}
-#mainNav .navbar-nav li.nav-item a.nav-link {
-    color: #fff;
-}
-#mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #ce804d;
-}
-#mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: #fff;
-}
-#mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #ce804d;
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
 }
 
-#mainNav .navbar-toggler {
-  font-size: 80%;
-  padding: 0.8rem;
+.nav {
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  background: #fff;
 }
 
-@media (min-width: 992px) {
-    #mainNav {
-      padding-top: 1.5rem;
-      padding-bottom: 1.5rem;
-      transition: padding-top 0.3s, padding-bottom 0.3s;
-    }
-    #mainNav .navbar-brand {
-      font-size: 1.75em;
-      transition: font-size 0.3s;
-    }
-    #mainNav .navbar-nav {
-      margin-top: 0;
-    }
-    #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-      color: #fff;
-      background: #ce804d;
-    }
-    #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-      color: #fff;
-      background: #ce804d;
-    }
-  
-    #mainNav.navbar-shrink {
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-    }
-    #mainNav.navbar-shrink .navbar-brand {
-      font-size: 1.5em;
-    }
-}
-
-.main {
-    padding-top : calc(2rem + 60px);
-    padding-bottom: 15rem;
-}
-
-@media (min-width: 992px) {
-  .main {
-    padding-top : calc(2rem + 120px);
-    padding-bottom: 15rem;
-}
-}
-
-.card-style {
-  width: 12rem;
-}
-
-.card-title {
-  font-size: 0.7rem;
-}
-
-.card-subtitle {
-  font-size: 0.5rem; 
-}
-
-.lead {
-  font-size: 1rem;
-}
-
-.padd {
-  padding-top: 16rem;
-}
-
-.img-pad {
-  padding-left: 6rem;
-}
-
-
-@media (min-width: 992px) {
-  .padd {
-    padding-top : 11rem;
-}
-.card-style {
-  width: 18rem;
-}
-
-.lead {
-  font-size: 1.25rem;
-}
-
-.img-pad {
-  padding-left: 4rem;
-}
-}
-
-
-.navbar {
-  background-image: url(assets/images/vic.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.nav-item{
-  text-align: right;
-}
-
-.top-text {
-    align-self: center;
-    font-family: 'Dancing Script', cursive;
-}
-
-.img-fluid {
-    align-self: center;
-    max-width: 70%; 
-    height: auto;
-}
-
-
-.red {
-    color:  red;
-}
-
-.page-section {
-    padding: 6rem 0;
-}
-
-.about {
-    background-color: #880c04;
-}
-  
-.page-section .page-section-heading {
-    font-size: 2.25rem;
-    line-height: 2rem;
-}
-
-.divider-top {
-    width: 100%;
-  max-width: 7rem;
-  height: 0.25rem;
-  margin: 1.25rem 0 1.5rem;
-}
-
-
-.footer {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    background-color: #2c3e50;
-    color: #fff;
-}
-
-.copyright {
-    background-color: #1a252f;
-}
-
-  
-.navbar-nav .nav-link {
-  padding-right: 0;
-  padding-left: 0;
-}
-.navbar-nav .dropdown-menu {
-  position: static;
-  float: none;
-}
-
-.navbar-text {
-  display: inline-block;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.navbar-collapse {
-  flex-basis: 100%;
-  flex-grow: 1;
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.navbar-toggler {
-  padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
-  line-height: 1;
-  background-color: transparent;
-  border: 0.125rem solid transparent;
-  border-radius: 0.5rem;
-}
-.navbar-toggler:hover, .navbar-toggler:focus {
+.links a {
+  margin-left: 20px;
   text-decoration: none;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.hero {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.card {
+  border: 1px solid #eee;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+.footer {
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+  text-align: center;
+  padding: 30px;
+  font-size: 0.9rem;
+  color: #666;
 }
